@@ -1,0 +1,24 @@
+{
+  "name": "love-gift",
+  "version": "1.0.0",
+  "description": "my love gift to girlfriend",
+  "scripts": {
+    "build": "copyfiles -u 1 -e src/index.coffee src/**/* dist && coffee -c -o dist/ src/index.coffee",
+    "dev": "copyfiles -u 1 -e src/index.coffee src/**/* dist && coffee -w -c -o dist/ src/index.coffee",
+    "clean": "rimraf dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idealclover/Love-Gift.git"
+  },
+  "author": "idealclover",
+  "bugs": {
+    "url": "https://github.com/idealclover/Love-Gift/issues"
+  },
+  "homepage": "https://github.com/idealclover/Love-Gift#readme",
+  "dependencies": {
+    "coffee-script": "^1.12.7",
+    "copyfiles": "^2.1.0",
+    "rimraf": "^2.6.3"
+  }
+}
